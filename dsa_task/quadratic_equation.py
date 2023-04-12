@@ -4,7 +4,7 @@ a = float(input("Insert coefficient a: "))
 b = float(input("Insert coefficient b: "))
 c = float(input("Insert coefficient c: "))
 
-discriminant = b ** 2 - 4 * a * c
+discriminant = (b ** 2) - (4 * a * c)
 
 if discriminant >= 0:
     root1 = (-b + math.sqrt(discriminant)) / 2 * a
