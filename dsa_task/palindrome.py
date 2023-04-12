@@ -1,33 +1,24 @@
 # Write a method in python to check if a string is a palindrome:
 
-public
-static
-boolean
-isPalindrome(String
-str) {
-if (str == null | | str.length() == 0)
-{
-return false;
-}
+def is_palindrome(str):
+    if str == null and str.length() == 0:
+        return false
 
-int
-start = 0;
-int
-end = str.length() - 1;
+    start = 0
+    end = str.length() - 1
 
-while (start < end) {
-if (str.charAt(start) != str.charAt(end)) {
-return false;
-}
-start + +;
-end - -;
-}
+    while start < end:
+        if str.charAt(start) != str.charAt(end):
+            return false
 
-return true;
-}
+    start + start
+    end - end
 
-String
-palindromeString = "racecar";
-boolean
-isPalindrome = isPalindrome(palindromeString);
-System.out.println(isPalindrome);
+    return true
+
+
+if __name__ == "__main__":
+    palindromeString = "racecar"
+
+    isPalindrome = is_palindrome(palindromeString)
+print(isPalindrome);
